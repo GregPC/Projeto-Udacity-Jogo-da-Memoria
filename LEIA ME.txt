@@ -24,12 +24,12 @@ Como foi construindo o jogo
 
 Utilizando HTML e CSS básicos para estruturar o tabuleiro com as cartas;
 
-Criei um deck de 8 pares de cartas (16 cartas) que é embaralhado sempre que a página é carregada ou atualizada;
+Foi Criado um deck de 8 pares de cartas (16 cartas) que é embaralhado sempre que a página é carregada ou atualizada;
 
-Adicionei um contador de movimentos para tornar o jogo mais desafiante;
+Foi adicionado um contador de movimentos para tornar o jogo mais desafiante;
 
-Adicionei um temporizador para saber a duração do jogo;
+Foi adicionado um temporizador para saber a duração do jogo;
 
-Adicionei algumas animações ao revelar as cartas, para tornar o visual mais interessante;
+Foi adicionado algumas animações ao revelar as cartas, para tornar o visual mais interessante;
 
-Criei uma janela pop-up ao vencer, parabenizando o jogador.
+Foi criado uma janela pop-up ao vencer, parabenizando o jogador.

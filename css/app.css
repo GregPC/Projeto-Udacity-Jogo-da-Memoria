@@ -23,6 +23,7 @@ body {
 
 .container {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -32,10 +33,49 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
+.show {
+	visibility: visible !important;
+	opacity: 1 !important;
+}
 
-/*
- * Styles for the deck of cards
- */
+/* Painel de pontuação */
+
+.score-panel {
+	display: flex;
+	flex-flow: row wrap;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.stars {
+	padding: 0;
+}
+
+.stars li {
+	list-style: none;
+	display: inline-block;
+}
+
+.fa-star {
+	color: #ccc;
+}
+
+.fa-star.shine {
+	color: #ffde00;
+}
+
+.score-panel .restart {
+	float: right;
+	cursor: pointer;
+}
+
+.stars,
+.moves,
+.timer {
+	margin: 0 15px;
+}
+
+/* Estilos para o baralho de cartas */
 
 .deck {
     width: 660px;
@@ -45,13 +85,14 @@ h1 {
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 0 3em;
 }
 
-.deck .card {
+.deck .card { 
+    display: flex;
     height: 125px;
     width: 125px;
     background: #2e3d49;
@@ -69,6 +110,9 @@ h1 {
     transform: rotateY(0);
     background: #02b3e4;
     cursor: default;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    
 }
 
 .deck .card.show {
@@ -77,33 +121,66 @@ h1 {
 
 .deck .card.match {
     cursor: default;
-    background: #02ccba;
+    background: #ffda06;
     font-size: 33px;
+    -webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+.deck .card.unmatched {
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+	animation-duration: .75s;
+	background: #ff0040;
 }
 
-/*
- * Styles for the Score Panel
- */
-
-.score-panel {
-    text-align: left;
-    width: 345px;
-    margin-bottom: 10px;
+.deck .card.disabled {
+	pointer-events: none;
 }
 
-.score-panel .stars {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    margin: 0 5px 0 0;
+/* Popup de Parabéns*/
+
+#congrats-popup {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.7);
+	visibility: hidden;
+	opacity: 0;
 }
 
-.score-panel .stars li {
-    list-style: none;
-    display: inline-block;
+#congrats-popup .popup {
+	background: white;
+	margin: 20px;
+	padding: 40px;
+	border-radius: 10px;
+	text-align: center;
 }
 
-.score-panel .restart {
-    float: right;
-    cursor: pointer;
+#congrats-popup h2 {
+	margin: 0;
+}
+
+#congrats-popup .summary {
+	margin: 40px 0;
+	font-size: 1.25rem;
+}
+
+#play-again {
+	background-color: #2e3d49;
+	font-size: 1.25rem;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: none;
+}
+
+#play-again:hover {
+	background-color: #02ccba;
+	cursor: pointer;
 }
