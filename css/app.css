@@ -184,3 +184,175 @@ h1 {
 	background-color: #02ccba;
 	cursor: pointer;
 }
+
+@media (max-width: 1440px){
+    .deck{
+        width: 650px!important;
+        min-height: 400px!important;
+    }
+    .deck .card {
+        height: 120px!important;
+        width: 120px!important;
+        margin: 10px;
+    }
+    .score-panel {
+        width: 400px!important;
+        font-size: 14px!important;   
+    }
+    #title-jogo{
+        font-size: 40px!important;
+    }
+     .deck .card.show {
+    font-size: 60px!important;
+    }
+}
+@media (max-width: 1024px){
+    .deck{
+        width: 550px!important;
+        min-height: 300px!important;
+    }
+    .deck .card {
+        height: 100px!important;
+        width: 100px!important;
+        margin: 10px;
+    }
+    .score-panel {
+        width: 400px!important;
+        font-size: 14px!important;   
+    }
+    #title-jogo{
+        font-size: 40px!important;
+    }
+     .deck .card.show {
+    font-size: 60px!important;
+    }
+}
+
+@media (max-width: 800px){
+    .deck{
+        width: 550px!important;
+        min-height: 300px!important;
+    }
+    .deck .card {
+        height: 90px!important;
+        width: 90px!important;
+        margin: 10px;
+    }
+    .score-panel {
+        width: 400px!important;
+        font-size: 14px!important;   
+    }
+    #title-jogo{
+        font-size: 40px!important;
+    }
+     .deck .card.show {
+    font-size: 60px!important;
+    }
+}
+
+@media (max-width: 700px){
+    .deck{
+        width: 485px!important;
+        min-height: 300px!important;
+    }
+    .deck .card {
+        height: 80px!important;
+        width: 80px!important;
+    }
+    .score-panel {
+        width: 315px!important;
+        font-size: 12px!important;   
+    }
+    #title-jogo{
+        font-size: 40px!important;
+    }
+     .deck .card.show {
+    font-size: 45px!important;
+    }
+    #span-vitorias{
+        font-size: 13px;
+     }
+    .score-panel .restart{
+        font-size: 13px;
+     }
+}
+
+@media (max-width: 520px){
+    .deck{
+        width: 422px!important;
+        min-height: 300px!important;
+    }
+    .deck .card {
+        height: 80px!important;
+        width: 80px!important;
+        margin: 4px;
+    }
+    .score-panel {
+        width: 250px!important;
+        font-size: 9px!important;   
+    }
+    #title-jogo{
+        font-size: 31px!important;
+    }
+    .moves{
+        font-size: 10px!important;
+    }
+    .deck .card.show {
+    font-size: 42px!important;
+    }
+    .score-panel .restart{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px){
+    .deck{
+        width: 350px!important ;
+        min-height: 300px!important ;
+    }
+    .deck .card {
+        height: 63px!important ;
+        width: 63px!important ;
+        margin: 1%;
+    }
+    .score-panel {
+        width: 250px!important ;
+        font-size: 9px!important ;   
+    }
+    #title-jogo{
+        font-size: 31px!important ;
+    }
+    .deck .card.show {
+    font-size: 40px!important;
+    }
+     #span-vitorias{
+        font-size: 7px;
+     }
+    .score-panel .restart{
+        font-size: 7px!important;
+     }
+}
+
+@media (max-width: 322px){
+    .deck{
+        width: 310px!important ;
+        min-height: 400px!important ;
+    }
+    .deck .card {
+        height: 74px!important ;
+        width: 55px!important ;
+    }
+    .score-panel {
+        width: 230px!important ;
+        font-size: 9px!important ;   
+    }
+    #title-jogo{
+        font-size: 25px!important ;
+    }
+    .moves{
+        font-size: 28px!important ;
+    }
+    .deck .card.show {
+    font-size: 40px!important;
+    }
+}

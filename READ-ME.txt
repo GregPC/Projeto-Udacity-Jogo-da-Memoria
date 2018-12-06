@@ -1,0 +1,52 @@
+Projeto de Jogo da Memória 
+ 
+O que é?
+
+É um jogo de cartas, usado para testar a memória dos jogadores.
+
+Como jogar?
+
+Para começar a jogo, o jogador só precisa clicar na primeira carta, dando início a partida.
+
+A partir do momento do primeiro clique na carta, a mesma é revelada e o jogo começa, e na sequência deve-se clicar em outra, se ambas cartas forem iguais permanecerão viradas, senão, as mesmas voltam a posição inicial, e é necessário uma nova tentativa ate completar o tabuleiro.
+
+Quanto menor o número de erros melhor sua avaliação no jogo.
+
+
+Apos o completar o jogo, o jogador recebera um feedback com número de movimentos e o seu tempo de jogo, e ainda uma avaliação em estrelas e a opção de jogar novamente.
+
+Ao clicar JOGAR NOVAMENTE o contador recomeça automaticamente dando inicio ao jogo.
+
+Desafio!!!
+
+Encontrar todos os pares com a menor quantidade de movimentos.
+
+Pontuação
+
+1 estrela por encontrar todos os pares;
+
+2 estrelas por encontrar todos os pares em até 18 movimentos.
+
+3 estrelas por encontrar todos os pares em até 12 movimentos.
+
+
+
+Como foi construindo o jogo
+
+Utilizando HTML e CSS básicos para estruturar o tabuleiro com as cartas;
+
+Foi Criado um deck de 8 pares de cartas (16 cartas) que é embaralhado sempre que a página é carregada ou atualizada;
+
+Foi adicionado um contador de movimentos para tornar o jogo mais desafiante;
+
+Foi adicionado um temporizador para saber a duração do jogo;
+
+Foi adicionado algumas animações ao revelar as cartas, para tornar o visual mais interessante;
+
+Foi criado uma janela pop-up ao vencer, parabenizando o jogador.
+
+Depêndencias:
+
+    https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css
+    https://fonts.googleapis.com/css?family=Coda
+
